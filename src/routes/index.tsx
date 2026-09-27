@@ -77,7 +77,7 @@ function imageFromDrive(value: string) {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Freelance Training11 | Student Projects" },
+      { title: "Freelance Training | Student Projects" },
       { name: "description", content: "Explore student projects and creative work from Freelance Training courses." },
       { property: "og:title", content: "Freelance Training | Student Projects" },
       { property: "og:description", content: "Explore student projects and creative work from Freelance Training courses." },
