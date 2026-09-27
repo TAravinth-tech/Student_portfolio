@@ -157,7 +157,7 @@ function Portfolio() {
               <h1 className="font-display text-5xl font-extrabold leading-[1.06] text-foreground sm:text-6xl lg:text-7xl">Freelance <span className="text-primary">Training</span></h1>
               <div className="mt-6 flex flex-col gap-5 sm:mt-8 sm:flex-row sm:items-end sm:justify-between">
                 <p className="max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">A collection of student ideas, experiments, and finished work. Explore the projects behind every course.</p>
-                <div className="flex items-center gap-2 text-xs font-bold uppercase text-primary"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
+                <div className="flex items-center gap-2 text-xs font-bold uppercase text-primary"><span>Explore the work11</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ function Portfolio() {
           <div className="mb-8 flex flex-col justify-between gap-5 border-b border-border pb-7 sm:flex-row sm:items-end">
             <div>
               <p className="mb-3 text-[11px] font-bold uppercase text-primary">The collection / 01</p>
-              <h2 id="work-heading" className="font-display text-3xl font-semibold sm:text-4xl">Explore the work<span className="text-primary">.</span></h2>
+              <h2 id="work-heading" className="font-display text-3xl font-semibold sm:text-4xl">Explore the work11<span className="text-primary">.</span></h2>
             </div>
             <div className="flex items-center gap-4"><p className="text-sm text-muted-foreground">{loading ? "Updating the collection…" : `${visibleProjects.length} ${visibleProjects.length === 1 ? "project" : "projects"}${activeCourse !== "All projects" ? ` in ${activeCourse}` : ""}`}</p><Button variant="outline" size="icon" onClick={refresh} disabled={loading} title="Refresh projects" aria-label="Refresh projects" className="shrink-0 border-border bg-background shadow-none"><RefreshCw className={loading ? "animate-spin" : ""} aria-hidden="true" /></Button></div>
           </div>
