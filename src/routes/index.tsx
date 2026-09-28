@@ -77,10 +77,10 @@ function imageFromDrive(value: string) {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Freelance Training | Student Projects" },
-      { name: "description", content: "Explore student projects and creative work from Freelance Training courses." },
-      { property: "og:title", content: "Freelance Training | Student Projects" },
-      { property: "og:description", content: "Explore student projects and creative work from Freelance Training courses." },
+      { title: "Freelance Training | Students Projects" },
+      { name: "description", content: "Explore students project and creative work from Freelance Training courses." },
+      { property: "og:title", content: "Freelance Training | Students Project" },
+      { property: "og:description", content: "Explore students project and creative work from Freelance Training courses." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -153,7 +153,7 @@ function Portfolio() {
           <div className="mx-auto max-w-[1440px] px-5 pb-10 pt-8 sm:px-8 sm:pb-16 sm:pt-8 lg:px-12 lg:pb-20">
             <div className="flex flex-col items-center gap-5 sm:grid sm:grid-cols-[1fr_auto_1fr] sm:gap-4">
               <img src={logoAsset} alt="Freelance Training logo" className="size-24 object-contain sm:size-28 sm:justify-self-start lg:size-32" />
-              <h1 className="text-center font-display text-3xl font-extrabold leading-[1.1] text-foreground min-[400px]:text-4xl sm:whitespace-nowrap md:text-5xl lg:text-6xl">Student <span className="text-primary">Projects</span></h1>
+              <h1 className="text-center font-display text-3xl font-extrabold leading-[1.1] text-foreground min-[400px]:text-4xl sm:whitespace-nowrap md:text-5xl lg:text-6xl">Students <span className="text-primary">Project</span></h1>
               <div className="hidden sm:block" aria-hidden="true" />
             </div>
             <div className="mt-5 flex items-center justify-center gap-2 text-xs font-bold uppercase text-primary sm:mt-8"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
@@ -199,7 +199,7 @@ function Portfolio() {
         </div></section>
       </main>
 
-      <footer className="border-t border-border"><div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-2 px-5 py-6 text-xs text-muted-foreground sm:flex-row sm:px-8 lg:px-12"><span>Freelance Training</span><span>Student projects worth sharing.</span></div></footer>
+      <footer className="border-t border-border"><div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-2 px-5 py-6 text-xs text-muted-foreground sm:flex-row sm:px-8 lg:px-12"><span>Freelance Training</span><span>Students project </span></div></footer>
 
       {selected && <div className="fixed inset-0 z-50 flex items-center justify-center bg-overlay p-4 sm:p-8" onMouseDown={(event) => { if (event.target === event.currentTarget) setSelected(null); }} role="presentation">
         <div className="flex max-h-[94vh] w-full max-w-5xl flex-col bg-background shadow-xl" role="dialog" aria-modal="true" aria-label={`${selected.title} by ${selected.student}`}>
