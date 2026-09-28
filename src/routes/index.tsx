@@ -150,12 +150,13 @@ function Portfolio() {
     <div className="min-h-screen bg-background text-foreground">
       <main>
         <section className="bg-background">
-          <div className="mx-auto max-w-[1440px] px-5 pb-12 pt-6 sm:px-8 sm:pb-16 sm:pt-8 lg:px-12 lg:pb-20">
-            <img src={logoAsset} alt="Freelance Training logo" className="size-24 object-contain sm:size-28 lg:size-32" />
-            <div className="flex flex-col items-center pt-6 text-center sm:pt-10 lg:pt-12">
-              <h1 className="font-display text-4xl font-extrabold leading-[1.1] text-foreground sm:text-5xl lg:text-6xl">Student <span className="text-primary">Projects</span></h1>
-              <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase text-primary sm:mt-8"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
+          <div className="mx-auto max-w-[1440px] px-5 pb-10 pt-8 sm:px-8 sm:pb-16 sm:pt-8 lg:px-12 lg:pb-20">
+            <div className="flex flex-col items-center gap-5 sm:grid sm:grid-cols-[1fr_auto_1fr] sm:gap-4">
+              <img src={logoAsset} alt="Freelance Training logo" className="size-24 object-contain sm:size-28 sm:justify-self-start lg:size-32" />
+              <h1 className="text-center font-display text-3xl font-extrabold leading-[1.1] text-foreground min-[400px]:text-4xl sm:whitespace-nowrap md:text-5xl lg:text-6xl">Student <span className="text-primary">Projects</span></h1>
+              <div className="hidden sm:block" aria-hidden="true" />
             </div>
+            <div className="mt-5 flex items-center justify-center gap-2 text-xs font-bold uppercase text-primary sm:mt-8"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
           </div>
         </section>
 
@@ -165,7 +166,7 @@ function Portfolio() {
               <p className="mb-3 text-[11px] font-bold uppercase text-primary">The collection / 01</p>
               <h2 id="work-heading" className="font-display text-3xl font-semibold sm:text-4xl">Explore the work<span className="text-primary">.</span></h2>
             </div>
-            <div className="flex items-center gap-4"><p className="text-sm text-muted-foreground">{loading ? "Updating the collection…" : `${visibleProjects.length} ${visibleProjects.length === 1 ? "project" : "projects"}${activeCourse !== "All projects" ? ` in ${activeCourse}` : ""}`}</p><Button variant="outline" size="icon" onClick={refresh} disabled={loading} title="Refresh projects" aria-label="Refresh projects" className="shrink-0 border-border bg-background shadow-none"><RefreshCw className={loading ? "animate-spin" : ""} aria-hidden="true" /></Button></div>
+            <div className="flex items-center justify-between gap-4 sm:justify-end"><p className="text-sm text-muted-foreground">{loading ? "Updating the collection…" : `${visibleProjects.length} ${visibleProjects.length === 1 ? "project" : "projects"}${activeCourse !== "All projects" ? ` in ${activeCourse}` : ""}`}</p><Button variant="outline" size="icon" onClick={refresh} disabled={loading} title="Refresh projects" aria-label="Refresh projects" className="shrink-0 border-border bg-background shadow-none"><RefreshCw className={loading ? "animate-spin" : ""} aria-hidden="true" /></Button></div>
           </div>
 
           {!error && (courses.length > 0 || loading) && <div className="mb-9 flex items-center gap-2 overflow-x-auto pb-2" role="group" aria-label="Filter projects by course">
