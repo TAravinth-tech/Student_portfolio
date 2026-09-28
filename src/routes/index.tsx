@@ -150,10 +150,12 @@ function Portfolio() {
     <div className="min-h-screen bg-background text-foreground">
       <main>
         <section className="bg-background">
-          <div className="mx-auto flex max-w-[1440px] flex-col items-center px-5 pb-14 pt-10 text-center sm:px-8 sm:pb-20 sm:pt-14 lg:px-12 lg:pb-24 lg:pt-16">
-            <img src={logoAsset} alt="Freelance Training logo" className="mb-8 size-44 object-contain sm:mb-10 sm:size-56 lg:size-64" />
-            <h1 className="font-display text-5xl font-extrabold leading-[1.06] text-foreground sm:text-6xl lg:text-8xl">Student <span className="text-primary">Projects</span></h1>
-            <div className="mt-8 flex items-center gap-2 text-xs font-bold uppercase text-primary sm:mt-10"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
+          <div className="mx-auto max-w-[1440px] px-5 pb-12 pt-6 sm:px-8 sm:pb-16 sm:pt-8 lg:px-12 lg:pb-20">
+            <img src={logoAsset} alt="Freelance Training logo" className="size-24 object-contain sm:size-28 lg:size-32" />
+            <div className="flex flex-col items-center pt-6 text-center sm:pt-10 lg:pt-12">
+              <h1 className="font-display text-4xl font-extrabold leading-[1.1] text-foreground sm:text-5xl lg:text-6xl">Student <span className="text-primary">Projects</span></h1>
+              <div className="mt-6 flex items-center gap-2 text-xs font-bold uppercase text-primary sm:mt-8"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
+            </div>
           </div>
         </section>
 
