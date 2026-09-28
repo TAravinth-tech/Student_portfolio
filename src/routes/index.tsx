@@ -150,16 +150,10 @@ function Portfolio() {
     <div className="min-h-screen bg-background text-foreground">
       <main>
         <section className="bg-background">
-          <div className="mx-auto max-w-[1440px] px-5 pb-12 pt-7 sm:px-8 sm:pb-16 sm:pt-12 lg:px-12 lg:pb-20 lg:pt-14">
-            <img src={logoAsset} alt="Freelance Training logo" className="mb-7 size-28 object-contain sm:mb-9 sm:size-36" />
-            <div className="max-w-5xl">
-              <p className="mb-4 text-xs font-bold uppercase text-primary">Student projects / Portfolio</p>
-              <h1 className="font-display text-5xl font-extrabold leading-[1.06] text-foreground sm:text-6xl lg:text-7xl">Freelance <span className="text-primary">Training</span></h1>
-              <div className="mt-6 flex flex-col gap-5 sm:mt-8 sm:flex-row sm:items-end sm:justify-between">
-                <p className="max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">A collection of student ideas, experiments, and finished work. Explore the projects behind every course.</p>
-                <div className="flex items-center gap-2 text-xs font-bold uppercase text-primary"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
-              </div>
-            </div>
+          <div className="mx-auto flex max-w-[1440px] flex-col items-center px-5 pb-14 pt-10 text-center sm:px-8 sm:pb-20 sm:pt-14 lg:px-12 lg:pb-24 lg:pt-16">
+            <img src={logoAsset} alt="Freelance Training logo" className="mb-8 size-44 object-contain sm:mb-10 sm:size-56 lg:size-64" />
+            <h1 className="font-display text-5xl font-extrabold leading-[1.06] text-foreground sm:text-6xl lg:text-8xl">Student <span className="text-primary">Projects</span></h1>
+            <div className="mt-8 flex items-center gap-2 text-xs font-bold uppercase text-primary sm:mt-10"><span>Explore the work</span><ArrowDownRight className="size-4" aria-hidden="true" /></div>
           </div>
         </section>
 
